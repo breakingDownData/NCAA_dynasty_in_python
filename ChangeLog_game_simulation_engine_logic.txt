@@ -1,0 +1,28 @@
+Additions: 
+- 2/6/2025:
+    - can now produce yards gained from run/pass play
+        - outcomes generated from NFL 2023 season data
+        - two probabilities to use:
+            - mean & std.dev 
+            - yards gained as pct of total plays to be used as probability for outcome
+                - would be cool to see how games play out using one or other outcome
+        - expansions: 
+            - use more years worth of data
+            - identify if teams who have a higher run/pass split have generally higher yardage outcomes when running/passing 
+            - categorize defenses by their run/pass stopping ability to impact average yards gain
+
+    - determine whether or not the play chosen will be run/pass depending on the team's run/pass split
+    - plotted the distribution of run/passes from NFL data 
+        - much wider outcomes for passes, higher average yardage than run
+        - narrower outcomes for runs, lower average yardage than pass
+
+    - GOALS for next addition(s): 
+        - tracker for down + distance
+            - variables:
+                - drive_no
+                - play_no
+                - yardage_marker (where you are on field, your endzone is 0, opponent's endzone is 100)
+                - down 
+                - distance
+                - if down = 4 and distance > 2 -> punt 
+                    - 2 can be changed depending on how aggressive users want to be 
