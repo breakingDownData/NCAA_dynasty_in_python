@@ -1,0 +1,13 @@
+{
+  "gem_bust_rates":{
+    "gem": 0.25,
+    "bust": 0.175,
+    "regular": 0.575
+  },
+  "dev_trait_distribution": {
+    "elite": 0.1,
+    "star":0.2,
+    "impact": 0.3,
+    "normal": 0.4
+  }
+}

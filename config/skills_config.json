@@ -1,0 +1,147 @@
+{
+  "default_skill_value": 50,
+  "penalties": {
+    "offense_using_defense_skill": 0.4,
+    "defense_using_offense_skill": 0.4
+  },
+  "skills": {
+    "speed": {
+      "type": "neutral",
+      "base_factor": 1.0
+    },
+    "run_blocking": {
+      "type": "offense",
+      "base_factor": 1.0
+    },
+    "pass_blocking": {
+      "type": "offense",
+      "base_factor": 1.0
+    },
+    "passing": {
+      "type": "offense",
+      "base_factor": 1.0
+    },
+    "running": {
+      "type": "offense",
+      "base_factor": 1.0
+    },
+    "catching": {
+      "type": "offense",
+      "base_factor": 1.0
+    },
+    "tackling": {
+      "type": "defense",
+      "base_factor": 1.0
+    },
+    "block_shedding": {
+      "type": "defense",
+      "base_factor": 1.0
+    },
+    "pursuit": {
+      "type": "defense",
+      "base_factor": 1.0
+    },
+    "zone_coverage": {
+      "type": "defense",
+      "base_factor": 1.0
+    },
+    "man_coverage": {
+      "type": "defense",
+      "base_factor": 1.0
+    }
+  },
+  "positions": {
+    "QB": {
+      "side": "offense",
+      "overrides": {
+        "passing": 1.5,
+        "running": 1.1
+      }
+    },
+    "WR": {
+      "side": "offense",
+      "overrides": {
+        "speed": 1.2,
+        "catching": 1.3
+      }
+    },
+    "RB": {
+      "side": "offense",
+      "overrides": {
+        "speed": 1.2,
+        "catching": 1.3
+      }
+    },
+    "OL": {
+      "side": "offense",
+      "overrides": {
+        "run_blocking": 1.2,
+        "pass_blocking": 1.3
+      }
+    },
+    "EDGE": {
+      "side": "offense",
+      "overrides": {
+        "speed": 1.2,
+        "catching": 1.3
+      }
+    },
+    "DT": {
+      "side": "offense",
+      "overrides": {
+        "speed": 1.2,
+        "catching": 1.3
+      }
+    },
+    "FS": {
+      "side": "offense",
+      "overrides": {
+        "speed": 1.2,
+        "catching": 1.3
+      }
+    },
+    "SS": {
+      "side": "offense",
+      "overrides": {
+        "speed": 1.2,
+        "catching": 1.3
+      }
+    },
+    "CB": {
+      "side": "defense",
+      "overrides": {
+        "speed": 1.2,
+        "man_coverage": 1.3,
+        "zone_coverage": 1.2
+      }
+    },
+    "LB": {
+      "side": "defense",
+      "overrides": {
+        "tackling": 1.3,
+        "pursuit": 1.2
+      }
+    },
+    "ATH": {
+      "side": "two_way",
+      "overrides": {
+        "tackling": 1.3,
+        "pursuit": 1.2
+      }
+    },
+    "K": {
+      "side": "special_teams",
+      "overrides": {
+        "tackling": 1.3,
+        "pursuit": 1.2
+      }
+    },
+    "P": {
+      "side": "special_teams",
+      "overrides": {
+        "tackling": 1.3,
+        "pursuit": 1.2
+      }
+    }
+  }
+}
